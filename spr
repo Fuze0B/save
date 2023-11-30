@@ -1,0 +1,127 @@
+#include <iostream>
+#include <fstream>
+#include <stdlib.h>
+#include <time.h>
+
+using namespace std;
+
+
+//rozklad na liczby pierwsze
+/*
+void rozklad(int a)
+{
+    int d=2;
+    while(d<=a)
+    {
+        if(a%d==0)
+        {
+            a=a/d;
+            cout << d << " ";
+        } else {d++;}
+    }
+}
+
+
+
+
+
+int main()
+{
+    int x;
+    ifstream plik("liczby.txt");
+    for(int i=0;i<7;i++)
+    {
+        plik >> x;
+        cout << x << " rozdklad: ";
+        rozklad(x);
+        cout << endl;
+    }
+    plik.close();
+    return 0;
+}
+*/
+/*
+ruchy browna
+ sporz�d� obraz figury sk�adaj�cej si� z punkt�w spe�niej�cych warunki
+1. rzeczywiste
+2. od 0 do 3
+3.y>x^2
+ilosc punktuw figury ma wynosic 5000
+
+int main()
+{
+    double x,y;
+    int licznik = 0;
+    srand(time(NULL));
+    ofstream plik("ruchy.xls");
+    while (licznik<5000)
+    {
+        x = ((float)rand()/RAND_MAX)*3;
+        y = ((float)rand()/RAND_MAX)*3;
+        if(y>x*x)
+        {
+            plik << x << "\t" << y << endl;
+            licznik++;
+        }
+    }
+    plik.close();
+}
+*/
+
+//liczba pierwsza
+
+/*
+bool czypierwsza(int a)
+{
+    int d=2;
+    while(d*d<=a)
+    {
+        if(a%d==0)
+        {
+            return false;
+        }else{d++}
+    }
+    return true;
+}
+
+int main()
+{
+    int x;
+    //cout<<"Podaj liczbe"<<endl;
+   //cin>>x;
+    cout<<"liczba "<<x<<"  "<<czyPierwsza(x);
+    return 0;
+}
+
+*/
+
+
+//NWD
+/*
+int NWD(int a,int b)
+{
+    while(a!=b)
+    {
+        if(a>b)
+        {
+            a=a-b;
+        } else {b=b-a;}
+
+    }
+    int NWD = a;
+    return NWD;
+}
+
+int main()
+{
+    int x;
+    cout << "podaj x" << endl;
+    cin >> x;
+    int y;
+    cout << "podaj y" << endl;
+    cin >> y;
+
+    cout << "NWD dla liczb: " << x << " i " << y << "wynosi: "<<NWD(x,y) << endl;
+    return 0;
+}
+*/
